@@ -1,0 +1,38 @@
+v {xschem version=3.4.8RC file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+F {}
+E {}
+L 4 330 -170 330 -30 {}
+L 4 330 -170 530 -170 {}
+L 4 530 -170 530 -30 {}
+L 4 330 -30 530 -30 {}
+B 5 507.5 -32.5 512.5 -27.5 {name=VCM dir=in}
+B 5 467.5 -32.5 472.5 -27.5 {name=VREF_GND dir=in}
+B 5 387.5 -32.5 392.5 -27.5 {name=VIN dir=in}
+B 5 427.5 -32.5 432.5 -27.5 {name=VREF dir=in}
+B 5 327.5 -152.5 332.5 -147.5 {name=EN_VCM dir=in}
+B 5 327.5 -112.5 332.5 -107.5 {name=EN_VREF_Z dir=in}
+B 5 467.5 -172.5 472.5 -167.5 {name=Cbtm dir=out}
+B 5 387.5 -172.5 392.5 -167.5 {name=VDD dir=in}
+B 5 327.5 -132.5 332.5 -127.5 {name=EN_VSS dir=in}
+B 5 327.5 -72.5 332.5 -67.5 {name=EN_VIN dir=in}
+B 5 527.5 -72.5 532.5 -67.5 {name=VSS dir=in}
+T {@symname} 407 -106 0 0 0.3 0.3 {}
+T {@name} 415 -122 0 0 0.2 0.2 {}
+T {VCM} 505 -44 0 0 0.2 0.2 {}
+T {VREF_GND} 455 -44 0 0 0.2 0.2 {}
+T {VIN} 385 -44 0 0 0.2 0.2 {}
+T {VREF} 425 -44 0 0 0.2 0.2 {}
+T {EN_VCM} 335 -154 0 0 0.2 0.2 {}
+T {EN_VREF_Z} 335 -114 0 0 0.2 0.2 {}
+T {Cbtm} 485 -164 0 1 0.2 0.2 {}
+T {VDD} 395 -164 0 1 0.2 0.2 {}
+T {EN_VSS} 335 -134 0 0 0.2 0.2 {}
+T {EN_VIN} 335 -74 0 0 0.2 0.2 {}
+T {VSS} 525 -74 0 1 0.2 0.2 {}
