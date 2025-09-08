@@ -1,0 +1,56 @@
+OpenROAD b16bda7e82721d10566ff7e2b68f1ff0be9f9e38 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+define_corners Slowest Typical Fastest
+read_liberty -corner Slowest /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib
+read_liberty -corner Typical /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib
+read_liberty -corner Fastest /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib
+Using 1e-12 for capacitance...
+Using 1e+00 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-06 for power...
+Using 1e-06 for distance...
+[INFO]: Reading ODB at '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/runs/gf_run5/tmp/placement/7-global.odb'…
+Reading design constraints file at '/home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 10.0
+[INFO]: Setting input delay to: 10.0
+[INFO]: Setting load to: 0.07291
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+[INFO]: Setting RC values...
+[INFO RSZ-0027] Inserted 19 input buffers.
+[INFO RSZ-0028] Inserted 68 output buffers.
+[INFO RSZ-0058] Using max wire length 9189um.
+[INFO RSZ-0035] Found 1 fanout violations.
+[INFO RSZ-0038] Inserted 4 buffers in 1 nets.
+[INFO RSZ-0039] Resized 165 instances.
+Placement Analysis
+---------------------------------
+total displacement       3994.9 u
+average displacement        7.5 u
+max displacement           84.9 u
+original HPWL           13298.4 u
+legalized HPWL          16070.3 u
+delta HPWL                   21 %
+
+[INFO DPL-0020] Mirrored 162 instances
+[INFO DPL-0021] HPWL before           16070.3 u
+[INFO DPL-0022] HPWL after            15676.8 u
+[INFO DPL-0023] HPWL delta               -2.4 %
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/runs/gf_run5/tmp/placement/9-resizer.odb'…
+Writing netlist to '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/runs/gf_run5/tmp/placement/9-resizer.nl.v'…
+Writing powered netlist to '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/runs/gf_run5/tmp/placement/9-resizer.pnl.v'…
+Writing layout to '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/runs/gf_run5/tmp/placement/9-resizer.def'…
+Writing timing constraints to '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/runs/gf_run5/tmp/placement/9-resizer.sdc'…
+area_report
+
+===========================================================================
+report_design_area
+============================================================================
+Design area 9995 u^2 87% utilization.
+area_report_end

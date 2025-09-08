@@ -1,0 +1,99 @@
+OpenROAD b16bda7e82721d10566ff7e2b68f1ff0be9f9e38 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+define_corners Slowest Typical Fastest
+read_liberty -corner Slowest /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib
+read_liberty -corner Typical /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib
+read_liberty -corner Fastest /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib
+Using 1e-12 for capacitance...
+Using 1e+00 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-06 for power...
+Using 1e-06 for distance...
+[INFO]: Reading ODB at '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/runs/gf_run5/tmp/15-state_machine.odb'…
+Reading design constraints file at '/home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 10.0
+[INFO]: Setting input delay to: 10.0
+[INFO]: Setting load to: 0.07291
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+[INFO]: Setting signal min routing layer to: Metal2 and clock min routing layer to Metal2. 
+[INFO]: Setting signal max routing layer to: Metal4 and clock max routing layer to Metal4. 
+-congestion_iterations 50 -verbose -congestion_report_file /home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/runs/gf_run5/tmp/routing/resizer-routing-timing-congestion.rpt
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: Metal4
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5450
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5800
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5800
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5800
+[INFO GRT-0019] Found 8 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 11
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0004] Blockages: 0
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical         3292          1903          42.19%
+Metal3     Horizontal       3248          1916          41.01%
+Metal4     Vertical         3292          1772          46.17%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0197] Via related to pin nodes: 2467
+[INFO GRT-0198] Via related Steiner nodes: 48
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 3204
+[INFO GRT-0112] Final usage 3D: 11984
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2            1903          1009           53.02%             0 /  0 /  0
+Metal3            1916          1092           56.99%             0 /  0 /  0
+Metal4            1772           271           15.29%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total             5591          2372           42.43%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 31584 um
+[INFO GRT-0014] Routed nets: 432
+[INFO]: Setting RC values...
+[INFO RSZ-0033] No hold violations found.
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL           18079.2 u
+legalized HPWL          18513.6 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 149 instances
+[INFO DPL-0021] HPWL before           18513.6 u
+[INFO DPL-0022] HPWL after            18079.2 u
+[INFO DPL-0023] HPWL delta               -2.3 %
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/runs/gf_run5/tmp/17-state_machine.odb'…
+Writing netlist to '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/runs/gf_run5/tmp/17-state_machine.nl.v'…
+Writing powered netlist to '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/runs/gf_run5/tmp/17-state_machine.pnl.v'…
+Writing layout to '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/runs/gf_run5/tmp/17-state_machine.def'…
+Writing timing constraints to '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/runs/gf_run5/tmp/17-state_machine.sdc'…
+area_report
+
+===========================================================================
+report_design_area
+============================================================================
+Design area 10666 u^2 93% utilization.
+area_report_end

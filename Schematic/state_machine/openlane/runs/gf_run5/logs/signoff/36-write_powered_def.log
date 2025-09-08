@@ -1,0 +1,23 @@
+OpenROAD b16bda7e82721d10566ff7e2b68f1ff0be9f9e38 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via1 :"
+  	EOLENCLOSURE 0.34 0.06 ;"
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via2 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via3 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via4 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0227] LEF file: /home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/runs/gf_run5/tmp/merged.nom.lef, created 15 layers, 56 vias, 229 library cells
+[INFO ODB-0127] Reading DEF file: /home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/runs/gf_run5/results/routing/state_machine.def
+[INFO ODB-0128] Design: state_machine
+[INFO ODB-0130]     Created 90 pins.
+[INFO ODB-0131]     Created 711 components and 3865 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 2592 connections.
+[INFO ODB-0133]     Created 432 nets and 1270 connections.
+[INFO ODB-0134] Finished DEF file: /home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/runs/gf_run5/results/routing/state_machine.def
+Top-level design name: state_machine
+Found default power net 'VDD'
+Found default ground net 'VSS'
+Found 1 power ports.
+Found 1 ground ports.
+Modified power connections of 711/711 cells.

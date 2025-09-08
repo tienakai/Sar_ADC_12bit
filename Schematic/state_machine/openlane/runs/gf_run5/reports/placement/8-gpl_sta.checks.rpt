@@ -1,0 +1,163 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= Typical Corner ===================================
+
+Startpoint: rst_z (input port clocked by clk)
+Endpoint: _521_ (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.15    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                         10.00   10.00 ^ input external delay
+    29    0.24    3.92    2.37   12.37 ^ rst_z (in)
+                                         rst_z (net)
+                  3.92    0.00   12.37 ^ _521_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                 12.37   data arrival time
+
+                  0.15   50.00   50.00   clock clk (rise edge)
+                          0.00   50.00   clock network delay (ideal)
+                         -0.25   49.75   clock uncertainty
+                          0.00   49.75   clock reconvergence pessimism
+                                 49.75 ^ _521_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                         -1.10   48.65   library recovery time
+                                 48.65   data required time
+-----------------------------------------------------------------------------
+                                 48.65   data required time
+                                -12.37   data arrival time
+-----------------------------------------------------------------------------
+                                 36.28   slack (MET)
+
+
+Startpoint: clk (clock source 'clk')
+Endpoint: en_comp (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.15   25.00   25.00   clock clk (fall edge)
+    29    0.10    0.27    0.16   25.16 v clk (in)
+                                         clk (net)
+                  0.27    0.00   25.16 v _412_/A1 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.07    2.31    1.41   26.57 ^ _412_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                         en_comp (net)
+                  2.31    0.00   26.57 ^ en_comp (out)
+                                 26.57   data arrival time
+
+                  0.15   50.00   50.00   clock clk (rise edge)
+                          0.00   50.00   clock network delay (ideal)
+                         -0.25   49.75   clock uncertainty
+                          0.00   49.75   clock reconvergence pessimism
+                        -10.00   39.75   output external delay
+                                 39.75   data required time
+-----------------------------------------------------------------------------
+                                 39.75   data required time
+                                -26.57   data arrival time
+-----------------------------------------------------------------------------
+                                 13.18   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= Typical Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= Typical Corner ===================================
+
+max slew
+
+Pin                                    Limit    Slew   Slack
+------------------------------------------------------------
+vss_n_o[2]                              3.00    4.30   -1.30 (VIOLATED)
+_260_/ZN                                3.00    4.30   -1.30 (VIOLATED)
+vss_n_o[10]                             3.00    4.28   -1.28 (VIOLATED)
+_285_/ZN                                3.00    4.28   -1.28 (VIOLATED)
+_371_/B                                 3.00    4.28   -1.28 (VIOLATED)
+vss_n_o[3]                              3.00    4.22   -1.22 (VIOLATED)
+_262_/ZN                                3.00    4.22   -1.22 (VIOLATED)
+data[5]                                 3.00    4.11   -1.11 (VIOLATED)
+_242_/ZN                                3.00    4.11   -1.11 (VIOLATED)
+_521_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_522_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_524_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_405_/A1                                3.00    3.92   -0.92 (VIOLATED)
+_525_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_515_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_516_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_518_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_520_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_530_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_523_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_528_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_514_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_517_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_527_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_531_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_529_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_526_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_508_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_535_/RN                                3.00    3.92   -0.92 (VIOLATED)
+rst_z                                   3.00    3.92   -0.92 (VIOLATED)
+_509_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_510_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_511_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_512_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_513_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_519_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_532_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_533_/RN                                3.00    3.92   -0.92 (VIOLATED)
+_534_/RN                                3.00    3.92   -0.92 (VIOLATED)
+sample_o                                3.00    3.82   -0.82 (VIOLATED)
+_404_/ZN                                3.00    3.82   -0.82 (VIOLATED)
+
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+rst_z                                    10     29    -19 (VIOLATED)
+
+max capacitance
+
+Pin                                    Limit     Cap   Slack
+------------------------------------------------------------
+rst_z                                   0.23    0.24   -0.01 (VIOLATED)
+_260_/ZN                                0.07    0.08   -0.01 (VIOLATED)
+_262_/ZN                                0.07    0.08   -0.01 (VIOLATED)
+_285_/ZN                                0.07    0.08   -0.01 (VIOLATED)
+_242_/ZN                                0.07    0.08   -0.00 (VIOLATED)
+
+
+max slew violations count Typical: 41
+max fanout violations count Typical: 1
+max cap violations count Typical: 5
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 2 unannotated drivers.
+ clk
+ _412_/ZN
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 41
+max fanout violation count 1
+max cap violation count 5
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
