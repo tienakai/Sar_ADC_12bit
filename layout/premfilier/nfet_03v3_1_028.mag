@@ -1,0 +1,22 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757730057
+<< polysilicon >>
+rect 97 402 190 416
+rect 97 340 113 402
+rect 176 340 190 402
+rect 97 320 190 340
+rect 112 307 168 320
+<< polycontact >>
+rect 113 340 176 402
+<< metal1 >>
+rect 97 402 190 416
+rect 97 340 113 402
+rect 176 340 190 402
+rect 97 320 190 340
+use nfet_03v3_6NV985  nfet_03v3_6NV985_0
+timestamp 1757730057
+transform 1 0 140 0 1 168
+box -140 -168 140 168
+<< end >>

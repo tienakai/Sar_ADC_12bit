@@ -1,0 +1,39 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757727608
+<< pwell >>
+rect -27 -26 501 285
+<< ndiff >>
+rect 4 44 67 140
+rect 205 44 268 140
+rect 408 44 471 140
+<< polysilicon >>
+rect 84 243 184 260
+rect 84 197 104 243
+rect 171 197 184 243
+rect 84 179 184 197
+rect 288 242 388 260
+rect 288 196 306 242
+rect 373 196 388 242
+rect 288 179 388 196
+<< polycontact >>
+rect 104 197 171 243
+rect 306 196 373 242
+<< metal1 >>
+rect 89 243 180 260
+rect 89 197 104 243
+rect 171 197 180 243
+rect 89 188 180 197
+rect 293 242 384 260
+rect 293 196 306 242
+rect 373 196 384 242
+rect 293 189 384 196
+rect 4 44 67 140
+rect 205 44 268 140
+rect 408 44 471 140
+use nfet_03v3_EDCWHP  nfet_03v3_EDCWHP_0
+timestamp 1757727608
+transform 1 0 236 0 1 92
+box -264 -118 264 118
+<< end >>

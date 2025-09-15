@@ -1,0 +1,54 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757729720
+<< pwell >>
+rect 34 94 102 175
+<< ndiff >>
+rect 34 94 102 175
+<< polysilicon >>
+rect 95 602 187 622
+rect 95 551 108 602
+rect 173 551 187 602
+rect 95 538 187 551
+rect 260 603 353 620
+rect 260 552 275 603
+rect 340 552 353 603
+rect 112 510 168 538
+rect 260 536 353 552
+rect 272 510 328 536
+<< polycontact >>
+rect 108 551 173 602
+rect 275 552 340 603
+<< metal1 >>
+rect 95 620 187 622
+rect 95 603 353 620
+rect 95 602 275 603
+rect 95 551 108 602
+rect 173 552 275 602
+rect 340 552 353 603
+rect 173 551 353 552
+rect 95 549 353 551
+rect 95 538 187 549
+rect 260 536 353 549
+rect 34 162 102 175
+rect 34 110 40 162
+rect 93 110 102 162
+rect 34 94 102 110
+rect 343 162 373 174
+rect 343 110 349 162
+rect 343 96 373 110
+<< via1 >>
+rect 40 110 93 162
+rect 349 110 402 162
+<< metal2 >>
+rect 34 162 410 176
+rect 34 110 40 162
+rect 93 110 349 162
+rect 402 110 410 162
+rect 34 94 410 110
+use nfet_03v3_NETG85  nfet_03v3_NETG85_0
+timestamp 1757729720
+transform 1 0 220 0 1 268
+box -220 -268 220 268
+<< end >>
