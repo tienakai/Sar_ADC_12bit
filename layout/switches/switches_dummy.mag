@@ -1,0 +1,105 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757242206
+<< pwell >>
+rect -231 -172 634 827
+rect -232 -342 634 -172
+<< nmos >>
+rect -35 4 21 604
+rect 343 0 399 400
+<< ndiff >>
+rect -129 560 -35 604
+rect -129 34 -115 560
+rect -67 34 -35 560
+rect -129 4 -35 34
+rect 21 560 113 604
+rect 21 34 51 560
+rect 99 34 113 560
+rect 21 4 113 34
+rect 249 368 343 400
+rect 249 30 263 368
+rect 311 30 343 368
+rect 249 0 343 30
+rect 399 368 491 400
+rect 399 30 429 368
+rect 477 30 491 368
+rect 399 0 491 30
+<< ndiffc >>
+rect -115 34 -67 560
+rect 51 34 99 560
+rect 263 30 311 368
+rect 429 30 477 368
+<< psubdiff >>
+rect -146 -185 545 -150
+rect -146 -276 -55 -185
+rect 510 -276 545 -185
+rect -146 -317 545 -276
+<< psubdiffcont >>
+rect -55 -276 510 -185
+<< polysilicon >>
+rect -118 649 99 779
+rect -35 604 21 649
+rect 264 446 481 576
+rect 343 400 399 446
+rect -35 -42 21 4
+rect 343 -46 399 0
+<< metal1 >>
+rect -123 560 -53 580
+rect -123 107 -115 560
+rect -67 107 -53 560
+rect -123 35 -117 107
+rect -56 35 -53 107
+rect -123 34 -115 35
+rect -67 34 -53 35
+rect -123 19 -53 34
+rect 37 560 107 581
+rect 37 34 51 560
+rect 99 34 107 560
+rect 37 19 107 34
+rect 255 368 325 383
+rect 255 109 263 368
+rect 311 109 325 368
+rect 255 37 257 109
+rect 318 37 325 109
+rect 255 30 263 37
+rect 311 30 325 37
+rect 255 15 325 30
+rect 415 368 485 383
+rect 415 30 429 368
+rect 477 30 485 368
+rect 415 15 485 30
+rect -146 -185 545 -150
+rect -146 -276 -55 -185
+rect 510 -276 545 -185
+rect -146 -317 545 -276
+<< via1 >>
+rect -117 35 -115 107
+rect -115 35 -67 107
+rect -67 35 -56 107
+rect 257 37 263 109
+rect 263 37 311 109
+rect 311 37 318 109
+<< metal2 >>
+rect -123 115 -52 120
+rect -123 109 331 115
+rect -123 107 257 109
+rect -123 35 -117 107
+rect -56 37 257 107
+rect 318 37 331 109
+rect -56 35 331 37
+rect -123 17 331 35
+<< labels >>
+flabel metal1 44 126 99 553 0 FreeSans 160 0 0 0 VCM
+port 1 nsew
+flabel metal1 422 31 476 366 0 FreeSans 160 0 0 0 VIN
+port 2 nsew
+flabel polysilicon -81 678 86 764 0 FreeSans 320 0 0 0 EN_VCM
+port 3 nsew
+flabel metal2 -21 27 217 98 0 FreeSans 160 0 0 0 Cbtm
+port 4 nsew
+flabel polysilicon 293 466 454 555 0 FreeSans 160 0 0 0 EN_VIN
+port 5 nsew
+flabel metal1 -89 -303 503 -174 0 FreeSans 320 0 0 0 VSS
+port 6 nsew
+<< end >>
