@@ -1,0 +1,27 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757415140
+<< metal1 >>
+rect 216 1467 1013 1472
+rect 216 1415 307 1467
+rect 957 1415 1013 1467
+rect 216 1409 1013 1415
+rect 8 382 1220 657
+<< via1 >>
+rect 307 1415 957 1467
+<< metal2 >>
+rect 216 1467 1013 1472
+rect 216 1415 307 1467
+rect 957 1415 1013 1467
+rect 216 1409 1013 1415
+use nmoscap_3p3_SJXBET  nmoscap_3p3_SJXBET_0
+timestamp 1757415140
+transform 1 0 614 0 1 776
+box -674 -836 674 836
+<< labels >>
+flabel metal1 298 399 970 632 0 FreeSans 320 0 0 0 VSS
+port 2 nsew
+flabel metal2 229 1412 999 1467 0 FreeSans 320 0 0 0 VDD
+port 1 nsew
+<< end >>

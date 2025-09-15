@@ -1,0 +1,33 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757414845
+<< nwell >>
+rect 1251 813 1411 865
+<< polysilicon >>
+rect 1251 813 1411 865
+<< metal1 >>
+rect 1227 865 1423 870
+rect 1227 813 1251 865
+rect 1411 813 1423 865
+rect 1227 811 1423 813
+rect 1017 415 1482 417
+rect 1017 308 1644 415
+rect 1455 306 1644 308
+<< via1 >>
+rect 1251 813 1411 865
+<< metal2 >>
+rect 1227 865 1423 870
+rect 1227 813 1251 865
+rect 1411 813 1423 865
+rect 1227 811 1423 813
+use nmoscap_3p3_SJ3AWP  nmoscap_3p3_SJ3AWP_0
+timestamp 1757414845
+transform 1 0 1325 0 1 478
+box -374 -536 374 536
+<< labels >>
+flabel metal2 1231 812 1418 867 0 FreeSans 320 0 0 0 VDD
+port 1 nsew
+flabel metal1 1231 321 1419 392 0 FreeSans 320 0 0 0 VSS
+port 2 nsew
+<< end >>
