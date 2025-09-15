@@ -1,0 +1,23 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757514670
+<< pwell >>
+rect 0 263 280 370
+<< polysilicon >>
+rect 95 334 189 349
+rect 95 287 111 334
+rect 176 287 189 334
+rect 95 271 189 287
+<< polycontact >>
+rect 111 287 176 334
+<< metal1 >>
+rect 95 334 189 349
+rect 95 287 111 334
+rect 176 287 189 334
+rect 95 280 189 287
+use nfet_03v3_N52JL5  nfet_03v3_N52JL5_0
+timestamp 1757514670
+transform 1 0 140 0 1 152
+box -140 -152 140 152
+<< end >>

@@ -1,0 +1,33 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757513722
+<< nwell >>
+rect -79 339 325 403
+rect 53 290 187 339
+rect 53 288 185 290
+rect 53 287 151 288
+rect 95 261 151 287
+<< polysilicon >>
+rect 53 352 187 368
+rect 53 301 87 352
+rect 167 301 187 352
+rect 53 290 187 301
+rect 53 288 185 290
+rect 53 287 151 288
+rect 95 261 151 287
+<< polycontact >>
+rect 87 301 167 352
+<< metal1 >>
+rect 80 368 184 369
+rect 53 366 184 368
+rect 53 352 185 366
+rect 53 301 87 352
+rect 167 301 185 352
+rect 53 288 185 301
+rect 53 287 100 288
+use pfet_03v3_N23838  pfet_03v3_N23838_0
+timestamp 1757513722
+transform 1 0 123 0 1 142
+box -202 -214 202 214
+<< end >>

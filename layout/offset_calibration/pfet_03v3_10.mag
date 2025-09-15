@@ -1,0 +1,19 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757514455
+<< metal1 >>
+rect 32 4599 78 4600
+rect -53 4274 78 4599
+rect 132 4398 2128 4483
+rect 2183 4277 2297 4604
+rect 32 4273 78 4274
+rect -58 2047 79 2374
+rect 132 2155 2128 2246
+rect 2183 2047 2302 2374
+rect -58 2046 70 2047
+use pfet_03v3_G26DBZ  pfet_03v3_G26DBZ_0
+timestamp 1757514455
+transform 1 0 1130 0 1 3322
+box -1250 -3442 1250 3442
+<< end >>

@@ -1,0 +1,37 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1757859342
+<< psubdiff >>
+rect 528 39 709 56
+rect 528 -47 568 39
+rect 666 -47 709 39
+rect 528 -64 709 -47
+<< nsubdiff >>
+rect 548 816 703 840
+rect 548 740 578 816
+rect 672 740 703 816
+rect 548 720 703 740
+<< psubdiffcont >>
+rect 568 -47 666 39
+<< nsubdiffcont >>
+rect 578 740 672 816
+<< metal1 >>
+rect 548 816 703 840
+rect 548 740 578 816
+rect 672 740 703 816
+rect 548 720 703 740
+rect 522 296 848 377
+rect 528 39 709 56
+rect 528 -47 568 39
+rect 666 -47 709 39
+rect 528 -64 709 -47
+use gf180mcu_fd_sc_mcu7t5v0__inv_1  gf180mcu_fd_sc_mcu7t5v0__inv_1_0 ~/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+timestamp 1757859342
+transform 1 0 696 0 1 -4
+box -86 -86 534 870
+use gf180mcu_fd_sc_mcu7t5v0__nand2_1  gf180mcu_fd_sc_mcu7t5v0__nand2_1_0 ~/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+timestamp 1757859342
+transform 1 0 -4 0 1 -4
+box -86 -86 646 870
+<< end >>
