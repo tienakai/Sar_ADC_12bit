@@ -47,23 +47,18 @@ C {devices/ipin.sym} -560 -100 0 0 {name=p9 lab=SINGLE_ENDED}
 C {devices/code_shown.sym} 140 -40 0 0 {name=s2 only_toplevel=false value="VDD VDD 0 1.8
 VSS VSS 0 0
 
-* Clock hệ thống: 20 MHz
 VCLK CLK 0 PULSE(0 1.8 0 0.1n 0.1n 25n 50n)
 
 * Reset active-low
 VRST RST_Z 0 PWL(0 0 100n 0 100.1n 1.8)
 
-* START: 1 xung sau reset
 VSTART START 0 PWL(0 0 120n 0 120.1n 1.8 170n 1.8 170.1n 0)
 
-* Các chế độ
 VENOFF EN_OFFSET_CAL 0 0
 VSINGLE SINGLE_ENDED 0 0
 
-* Đầu vào COMP_P bằng sóng sin
 VSIN COMP_P 0 SIN(0.9 0.9 50Meg 0 0)
 
-* Các input chưa dùng = 0
 VZ1 SMPL_ON_P 0 0
 VZ2 SMPL_ON_N 0 0
 VZ3 EN_VCM_SW 0 0
