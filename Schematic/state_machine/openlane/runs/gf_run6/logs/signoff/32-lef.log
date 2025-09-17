@@ -1,0 +1,124 @@
+
+Magic 8.3 revision 530 - Compiled on Fri Jul 25 21:43:01 UTC 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Using technology "gf180mcuD", version 1.0.531-0-g9d590c9
+Reading LEF data from file /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/techlef/gf180mcu_fd_sc_mcu7t5v0__nom.tlef.
+This action cannot be undone.
+LEF read, Line 88 (Message): Unknown keyword "MINWIDTH" in LEF file; ignoring.
+LEF read, Line 95 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 105 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 106 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 120 (Message): Unknown keyword "ARRAYSPACING" in LEF file; ignoring.
+LEF read, Line 125 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 137 (Message): Unknown keyword "MINWIDTH" in LEF file; ignoring.
+LEF read, Line 144 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 145 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 146 (Message): Unknown keyword "ANTENNAGATEPLUSDIFF" in LEF file; ignoring.
+LEF read, Line 155 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 156 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 172 (Message): Unknown keyword "ARRAYSPACING" in LEF file; ignoring.
+LEF read, Line 177 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 189 (Message): Unknown keyword "MINWIDTH" in LEF file; ignoring.
+LEF read, Line 196 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 197 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 198 (Message): Unknown keyword "ANTENNAGATEPLUSDIFF" in LEF file; ignoring.
+LEF read, Line 207 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 208 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 224 (Message): Unknown keyword "ARRAYSPACING" in LEF file; ignoring.
+LEF read, Line 229 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 241 (Message): Unknown keyword "MINWIDTH" in LEF file; ignoring.
+LEF read, Line 248 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 249 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 250 (Message): Unknown keyword "ANTENNAGATEPLUSDIFF" in LEF file; ignoring.
+LEF read, Line 259 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 260 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 276 (Message): Unknown keyword "ARRAYSPACING" in LEF file; ignoring.
+LEF read, Line 281 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 295 (Message): Unknown keyword "MINWIDTH" in LEF file; ignoring.
+LEF read, Line 307 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 308 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 309 (Message): Unknown keyword "ANTENNAGATEPLUSDIFF" in LEF file; ignoring.
+LEF read, Line 314 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 315 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read: Processed 1319 lines.
+Reading DEF data from file /home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/openlane/runs/gf_run6/results/routing/state_machine.def.
+This action cannot be undone.
+  Processed 4 vias total.
+Cell gf180mcu_fd_sc_mcu7t5v0__fill_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Scaled magic input cell gf180mcu_fd_sc_mcu7t5v0__fill_1 geometry by factor of 2
+Cell gf180mcu_fd_sc_mcu7t5v0__fill_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Scaled magic input cell gf180mcu_fd_sc_mcu7t5v0__fill_2 geometry by factor of 2
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_8 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__fillcap_16 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__endcap read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__filltie read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_3 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__oai21_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__nor3_4 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__nor3_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__nand2_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_3 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__or2_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__oai31_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__or3_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_3 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_4 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__oai211_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi22_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__oai211_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__nor4_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__clkinv_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__oai22_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi211_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__and2_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__nor2_4 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__and3_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__oai221_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__mux2_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__nand3_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__nand4_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__oai32_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__inv_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__buf_1 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+Cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_4 read from path /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag
+  Processed 711 subcell instances total.
+  Processed 90 pins total.
+  Processed 2 special nets total.
+  Processed 432 nets total.
+DEF read: Processed 8435 lines.
+[INFO]: Writing abstract LEF
+Generating LEF output /home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/openlane/runs/gf_run6/results/signoff/state_machine.lef for cell state_machine:
+Diagnostic:  Write LEF header for cell state_machine
+Diagnostic:  Writing LEF output for cell state_machine
+Diagnostic:  Scale value is 0.005000
+[INFO]: LEF Write Complete

@@ -7,9 +7,6 @@ F {}
 E {}
 P 4 5 990 -140 990 -480 1470 -480 1470 -140 990 -140 {}
 T {Added to avoid VGS of M2 > VDD} 1150 -470 0 0 0.4 0.4 {}
-T {Mach nay la level shifter + driver co nhiem vu:
-- dich muc dieu khien tu mien logic thap len mien logic cao
-} 1880 -650 0 0 0.2 0.2 {}
 N 870 -860 890 -860 {
 lab=Vtop}
 N 890 -860 970 -860 {
@@ -279,14 +276,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {/home/tien/gf180xd/CS_DAC/xschem/gf180mcuc-stdcells/inv_4.sym} 1210 -600 0 0 {name=x1 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {devices/code_shown.sym} 1850 -810 0 0 {name=NGSPICE2 only_toplevel=true
-value="
-VVDD VDD 0 dc 3.3
-VVPW VPW 0 dc 0 
-VVNW VNW 0 dc 3.3 
-VVSS VSS 0 dc 0
-"}
+C {standard_cell_gf180mcu/inv_4.sym} 1160 -620 0 0 {name=x1 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {symbols/nfet_06v0.sym} 1160 -880 3 1 {name=M12
 L=0.9u
 W=32u
@@ -315,8 +305,8 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {/home/tien/gf180xd/CS_DAC/xschem/gf180mcuc-stdcells/inv_8.sym} 1310 -600 0 0 {name=x2 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
-C {/home/tien/gf180xd/CS_DAC/xschem/gf180mcuc-stdcells/inv_8.sym} 770 -420 0 0 {name=x3 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {standard_cell_gf180mcu/inv_8.sym} 1310 -600 0 0 {name=x2 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {standard_cell_gf180mcu/inv_8.sym} 770 -420 0 0 {name=x3 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {symbols/pfet_03v3.sym} 1370 -760 2 1 {name=M8
 L=12u
 W=20u
@@ -333,3 +323,15 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 800 -840 0 0 {name=p30 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1020 -840 0 0 {name=p32 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 760 -460 1 0 {name=p31 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 780 -460 1 0 {name=p33 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 780 -380 1 1 {name=p34 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 760 -380 1 1 {name=p35 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1200 -570 1 1 {name=p36 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1220 -570 1 1 {name=p37 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1300 -560 1 1 {name=p38 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1320 -560 1 1 {name=p39 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1200 -630 1 0 {name=p40 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1220 -630 1 0 {name=p41 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1300 -640 1 0 {name=p42 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1320 -640 1 0 {name=p43 sig_type=std_logic lab=VDD}

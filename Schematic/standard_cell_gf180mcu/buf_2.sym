@@ -1,0 +1,50 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=primitive
+function1="0 "
+format="@name @@I @@Z @@VDD @@VNW @@VPW @@VSS @prefix\\\\buf_4"
+template="name=x1 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ "
+extra="VDD VNW VPW VSS prefix"
+verilogprefix=gf180mcu_fd_sc_mcu7t5v0__
+highlight=true
+}
+V {}
+S {type=primitive
+function1="0 ~"
+format="@name @@I @@ZN @VDD @VNW @VPW @VSS @prefix\\\\buf_2"
+template="name=x1 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ "
+extra="VDD VNW VPW VSS prefix"
+verilogprefix=gf180mcu_fd_sc_mcu7t5v0__
+highlight=true
+}
+E {}
+L 4 80 -50 80 -10 {}
+L 4 80 -50 120 -30 {}
+L 4 80 -10 120 -30 {}
+L 4 130 -30 140 -30 {}
+L 4 60 -30 80 -30 {}
+L 4 120 -30 130 -30 {}
+L 4 90 -60 90 -40 {}
+L 4 100 -70 100 -40 {}
+L 4 90 -20 90 10 {}
+L 4 100 -20 100 10 {}
+L 4 90 -70 90 -60 {}
+B 5 57.5 -32.5 62.5 -27.5 {name=I dir=in goto=1 propag=1}
+B 5 137.5 -32.5 142.5 -27.5 {name=Z dir=out }
+B 5 87.5 7.5 92.5 12.5 {name=VSS
+dir=inout}
+B 5 97.5 7.5 102.5 12.5 {name=VPW
+dir=inout}
+B 5 87.5 -72.5 92.5 -67.5 {name=VDD
+dir=inout}
+B 5 97.5 -72.5 102.5 -67.5 {name=VNW
+dir=inout}
+T {I} 65 -44 0 0 0.2 0.2 {}
+T {Z} 136.25 -44 0 1 0.2 0.2 {}
+T {@name} 102.5 -15 0 0 0.2 0.2 {}
+T {@symname} 92.5 -55 0 0 0.2 0.2 {}
+T {VDD} 70 -70 0 0 0.2 0.2 {}
+T {VPW} 110 0 0 0 0.2 0.2 {}
+T {VNW} 110 -70 0 0 0.2 0.2 {}
+T {VSS} 70 0 0 0 0.2 0.2 {}

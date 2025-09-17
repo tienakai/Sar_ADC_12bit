@@ -1,0 +1,105 @@
+OpenROAD b16bda7e82721d10566ff7e2b68f1ff0be9f9e38 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+define_corners Slowest Typical Fastest
+read_liberty -corner Slowest /home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/openlane/runs/gf_run6/tmp/cts/cts-slowest.lib
+read_liberty -corner Typical /home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/openlane/runs/gf_run6/tmp/cts/cts.lib
+read_liberty -corner Fastest /home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/openlane/runs/gf_run6/tmp/cts/cts-fastest.lib
+Using 1e-12 for capacitance...
+Using 1e+00 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-06 for power...
+Using 1e-06 for distance...
+[INFO]: Reading ODB at '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/openlane/runs/gf_run6/results/placement/state_machine.odb'…
+Reading design constraints file at '/home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 10.0
+[INFO]: Setting input delay to: 10.0
+[INFO]: Setting load to: 0.07291
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+[INFO]: Setting RC values...
+[INFO]: Configuring cts characterization...
+[INFO]: Performing clock tree synthesis...
+[INFO]: Running Clock Tree Synthesis...
+[INFO CTS-0050] Root buffer is gf180mcu_fd_sc_mcu7t5v0__clkbuf_16.
+[INFO CTS-0051] Sink buffer is gf180mcu_fd_sc_mcu7t5v0__clkbuf_4.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+                    gf180mcu_fd_sc_mcu7t5v0__clkbuf_4
+                    gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+[INFO CTS-0049] Characterization buffer is gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.
+[INFO CTS-0007] Net "clk" found for clock "clk".
+[INFO CTS-0010]  Clock net "clk" has 29 sinks.
+[WARNING CTS-0041] Net "net27" has 1 sinks. Skipping...
+[WARNING CTS-0041] Net "en_comp" has 0 sinks. Skipping...
+[INFO CTS-0008] TritonCTS found 1 clock nets.
+[INFO CTS-0097] Characterization used 3 buffer(s) types.
+[INFO CTS-0200] 0 placement blockages have been identified.
+[INFO CTS-0201] 0 placed hard macros will be treated like blockages.
+[INFO CTS-0027] Generating H-Tree topology for net clk.
+[INFO CTS-0028]  Total number of sinks: 29.
+[INFO CTS-0029]  Sinks will be clustered in groups of up to 25 and with maximum cluster diameter of 50.0 um.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 39200  dbu (19 um).
+[INFO CTS-0023]  Original sink region: [(17530, 43120), (191130, 231280)].
+[INFO CTS-0024]  Normalized sink region: [(0.447194, 1.1), (4.87577, 5.9)].
+[INFO CTS-0025]     Width:  4.4286.
+[INFO CTS-0026]     Height: 4.8000.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 15
+    Sub-region size: 4.4286 X 2.4000
+[INFO CTS-0034]     Segment length (rounded): 1.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 8
+    Sub-region size: 2.2143 X 2.4000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 29.
+[INFO CTS-0018]     Created 5 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 2.
+[INFO CTS-0015]     Created 5 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 6:2, 8:1, 9:1..
+[INFO CTS-0017]     Max level of the clock tree: 2.
+[INFO CTS-0098] Clock net "clk"
+[INFO CTS-0099]  Sinks 32
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 168.23 um
+[INFO CTS-0102]  Path depth 2 - 2
+[INFO CTS-0207]  Leaf load cells 3
+[INFO]: Repairing long wires on clock nets...
+[INFO RSZ-0058] Using max wire length 9189um.
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/openlane/runs/gf_run6/results/cts/state_machine.odb'…
+Writing layout to '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/openlane/runs/gf_run6/results/cts/state_machine.def'…
+Writing timing constraints to '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/openlane/runs/gf_run6/results/cts/state_machine.sdc'…
+[INFO]: Legalizing...
+Placement Analysis
+---------------------------------
+total displacement       2691.1 u
+average displacement        5.0 u
+max displacement          119.3 u
+original HPWL           15964.2 u
+legalized HPWL          18513.6 u
+delta HPWL                   16 %
+
+[INFO DPL-0020] Mirrored 149 instances
+[INFO DPL-0021] HPWL before           18513.6 u
+[INFO DPL-0022] HPWL after            18079.2 u
+[INFO DPL-0023] HPWL delta               -2.3 %
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/openlane/runs/gf_run6/results/cts/state_machine.odb'…
+Writing layout to '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/openlane/runs/gf_run6/results/cts/state_machine.def'…
+Writing timing constraints to '/home/khanhduy/Sar_ADC_12bit/Schematic/state_machine/openlane/runs/gf_run6/results/cts/state_machine.sdc'…
+cts_report
+[INFO CTS-0003] Total number of Clock Roots: 1.
+[INFO CTS-0004] Total number of Buffers Inserted: 5.
+[INFO CTS-0005] Total number of Clock Subnets: 5.
+[INFO CTS-0006] Total number of Sinks: 29.
+cts_report_end

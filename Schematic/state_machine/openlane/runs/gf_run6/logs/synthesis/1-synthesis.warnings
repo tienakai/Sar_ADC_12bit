@@ -1,0 +1,2 @@
+WARNING: TRISTATE_BUFFER_MAP is defined but could not be found: /home/khanhduy/conda-gf180mcu-env/envs/gf180mcu-env/share/pdk/gf180mcuD/libs.tech/openlane/gf180mcu_fd_sc_mcu7t5v0/tribuff_map.v
+ABC: Warning: Detected 6 multi-output gates (for example, "gf180mcu_fd_sc_mcu7t5v0__addf_1").

@@ -261,5 +261,5 @@ C {switches/switches.sym} 2070 -2080 2 1 {name=x3}
 C {CDAC/CDAC_12bit.sym} 960 -510 0 0 {}
 C {CDAC/CDAC_12bit.sym} 960 -2030 2 1 {}
 C {preamplifier/premplifier.sym} 5170 -890 0 0 {name=x1}
-C {latch_comparator/latched_comparator.sym} 5520 -1070 0 0 {name=x2}
+C {comparator/latched_comparator.sym} 5520 -1070 0 0 {name=x2}
 C {offset_calibration/offset_calibration.sym} 6040 -1330 0 1 {name=x5}

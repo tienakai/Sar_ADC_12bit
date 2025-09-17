@@ -1,0 +1,114 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= Typical Corner ===================================
+
+Startpoint: rst_z (input port clocked by clk)
+Endpoint: _535_ (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.15    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                         10.00   10.00 ^ input external delay
+     1    0.01    0.14    0.06   10.06 ^ rst_z (in)
+                                         rst_z (net)
+                  0.14    0.00   10.06 ^ input4/I (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+     1    0.01    0.14    0.23   10.28 ^ input4/Z (gf180mcu_fd_sc_mcu7t5v0__clkbuf_1)
+                                         net4 (net)
+                  0.14    0.00   10.28 ^ fanout91/I (gf180mcu_fd_sc_mcu7t5v0__buf_2)
+     5    0.04    0.39    0.38   10.66 ^ fanout91/Z (gf180mcu_fd_sc_mcu7t5v0__buf_2)
+                                         net91 (net)
+                  0.39    0.00   10.66 ^ fanout90/I (gf180mcu_fd_sc_mcu7t5v0__buf_3)
+    10    0.09    0.50    0.52   11.18 ^ fanout90/Z (gf180mcu_fd_sc_mcu7t5v0__buf_3)
+                                         net90 (net)
+                  0.50    0.00   11.18 ^ _535_/RN (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                                 11.18   data arrival time
+
+                  0.15   50.00   50.00   clock clk (rise edge)
+                          0.00   50.00   clock network delay (ideal)
+                         -0.25   49.75   clock uncertainty
+                          0.00   49.75   clock reconvergence pessimism
+                                 49.75 ^ _535_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_1)
+                          0.19   49.94   library recovery time
+                                 49.94   data required time
+-----------------------------------------------------------------------------
+                                 49.94   data required time
+                                -11.18   data arrival time
+-----------------------------------------------------------------------------
+                                 38.76   slack (MET)
+
+
+Startpoint: clk (clock source 'clk')
+Endpoint: en_comp (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.15   25.00   25.00   clock clk (fall edge)
+    29    0.10    0.27    0.16   25.16 v clk (in)
+                                         clk (net)
+                  0.27    0.00   25.16 v _412_/A1 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.00    0.22    0.20   25.35 ^ _412_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                         net27 (net)
+                  0.22    0.00   25.35 ^ output27/I (gf180mcu_fd_sc_mcu7t5v0__buf_1)
+     1    0.07    1.26    0.91   26.26 ^ output27/Z (gf180mcu_fd_sc_mcu7t5v0__buf_1)
+                                         en_comp (net)
+                  1.26    0.00   26.26 ^ en_comp (out)
+                                 26.26   data arrival time
+
+                  0.15   50.00   50.00   clock clk (rise edge)
+                          0.00   50.00   clock network delay (ideal)
+                         -0.25   49.75   clock uncertainty
+                          0.00   49.75   clock reconvergence pessimism
+                        -10.00   39.75   output external delay
+                                 39.75   data required time
+-----------------------------------------------------------------------------
+                                 39.75   data required time
+                                -26.26   data arrival time
+-----------------------------------------------------------------------------
+                                 13.49   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= Typical Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= Typical Corner ===================================
+
+
+max slew violations count Typical: 0
+max fanout violations count Typical: 0
+max cap violations count Typical: 0
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 3 unannotated drivers.
+ clk
+ _412_/ZN
+ output27/Z
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================

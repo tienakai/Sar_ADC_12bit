@@ -376,7 +376,7 @@ C {devices/lab_pin.sym} 1810 -1150 0 1 {name=p6 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 2070 -290 0 1 {name=p45 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 2270 -290 0 1 {name=p46 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 2430 -290 0 1 {name=p47 sig_type=std_logic lab=VSS}
-C {/home/tien/gf180xd/CS_DAC/xschem/gf180mcuc-stdcells/inv_1.sym} 970 -130 0 0 {name=x1 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
+C {standard_cell_gf180mcu/inv_1.sym} 970 -130 0 0 {name=x1 VDD=VDD VNW=VNW VPW=VPW VSS=VSS prefix=gf180mcu_fd_sc_mcu7t5v0__ }
 C {symbols/pfet_03v3.sym} 1170 -1150 0 0 {name=M3
 L=1u
 W=16u
@@ -757,3 +757,7 @@ L=10.22e-6
 model=ppolyf_u_2k
 spiceprefix=X
 m=1}
+C {devices/lab_pin.sym} 960 -90 3 0 {name=p48 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 980 -90 3 0 {name=p49 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 980 -170 3 1 {name=p50 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 960 -170 3 1 {name=p51 sig_type=std_logic lab=VDD}
